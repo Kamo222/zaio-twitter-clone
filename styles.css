@@ -1,19 +1,26 @@
 * {
     padding: none;
     margin: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
 }
 
 .sidebar {
-    width: 30vw;
+    width: 402px;
     height: 100vh;
     border: 1px solid black;
-    padding-left: 100px;
+    padding-left: 150px;
 
 }
 
 .sidebar .icon {
-    height: 10%;
-    width: 10%;
+    height: 35px;
+    width: 35px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .sidebar .sidebar-btn {
@@ -22,7 +29,15 @@
 .sidebar .sidebar-btn .sidebar-keys {
     display: flex;
     flex-direction: row;
-    padding: 12px 12px 12px 0;
+    /* padding: 6px 12px 6px 0; */
+    font-size: 22px;
+    align-items: center;
+    height: 50px;
+    width: 210px;
+}
+
+.sidebar .sidebar-btn .sidebar-keys span {
+    padding-left: 20px;
 }
 
 .sidebar-keys svg {
@@ -34,16 +49,19 @@
     border: none;
     color: rgba(255, 255, 255, 1);
     background-color: rgb(29, 155, 240);
-    width: 80px;
-    border-radius: 20px;
+    font-size: 17px;
+    width: 218px;
+    height: 50px;
+    border-radius: 50px;
     margin-top: 12px;
 }
 
 .profile-btn {
-    margin-top: 30px;
-    width: 140px;
-    height: 20px;
+    margin-top: 70px;
+    width: 218px;
+    height: 50px;
     display: flex;
+    font-size: 17px;
 
 }
 
@@ -54,9 +72,124 @@
 }
 
 .profile-btn .name-handle {
-    width: spx;
+    width: 5px;
 }
 
 .profile-btn svg {
     color: black;
 }
+
+.main {
+    width: 598px;
+    border: 1px solid black;
+}
+
+ .home .home-heading {
+    height: 53px;
+    padding: 16px 16px;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.home .home-heading span {
+    font-size: 20px;
+}
+
+.home .home-btn {
+    display: flex;
+    justify-content: space-around;
+    height: 53px;
+    
+}
+
+.home .home-btn .for-you {
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home .home-btn .following {
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tweet {
+    height: 120px;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.tweet .tweet-img {
+    height: 155px;
+    padding: 16px;
+}
+
+.tweet .tweet-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.tweet .tweet-post {
+    padding-left: 5px;
+    width: 100%;
+}
+
+.tweet-input {
+    display: flex;
+    padding-top: 16px;
+}
+
+.tweet-input input {
+    border: none;
+    font-size: 20px;
+}
+
+.tweet-btn {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.tweet-btn .tweet-icons {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.tweet-icons svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    
+}
+
+.blue-color {
+    color: rgb(29, 155, 240); 
+}
+
+.tweet-post-btn .tweet-btn {
+    width: 66px;
+    height: 36px;
+    border: none;
+    color: white;
+    background-color: rgb(29, 155, 240);
+    border-radius: 50px;
+    justify-content: center;
+}
+
+
+
