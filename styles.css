@@ -11,16 +11,16 @@ body {
 .sidebar {
     width: 402px;
     height: 100vh;
-    border: 1px solid black;
-    padding-left: 150px;
+    border-right: 1px solid #eff3f4;
+    padding-left: 147px;
 
 }
 
 .sidebar .icon {
-    height: 35px;
-    width: 35px;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    height: 32px;
+    width: 29px;
+    margin-top: 12px;
+    margin-bottom: 14px;
 }
 
 .sidebar .sidebar-btn {
@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: row;
     /* padding: 6px 12px 6px 0; */
-    font-size: 22px;
+    font-size: 21px;
     align-items: center;
     height: 50px;
     width: 210px;
@@ -41,8 +41,8 @@ body {
 }
 
 .sidebar-keys svg {
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
 }
 
 .post-btn {
@@ -50,8 +50,8 @@ body {
     color: rgba(255, 255, 255, 1);
     background-color: rgb(29, 155, 240);
     font-size: 17px;
-    width: 218px;
-    height: 50px;
+    width: 233px;
+    height: 52px;
     border-radius: 50px;
     margin-top: 12px;
 }
@@ -73,6 +73,15 @@ body {
 
 .profile-btn .name-handle {
     width: 5px;
+    padding-left: 10px;
+}
+
+.profile-btn .name-handle span {
+    font-size: 15px;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .profile-btn svg {
@@ -81,13 +90,12 @@ body {
 
 .main {
     width: 598px;
-    border: 1px solid black;
+    border-right: 1px solid #eff3f4;
 }
 
  .home .home-heading {
     height: 53px;
     padding: 16px 16px;
-    border: 1px solid black;
     width: 100%;
     display: flex;
     align-items: center;
@@ -95,35 +103,47 @@ body {
 
 .home .home-heading span {
     font-size: 20px;
+    font-weight: 700;
 }
 
 .home .home-btn {
     display: flex;
     justify-content: space-around;
     height: 53px;
+    border-bottom: 1px solid #eff3f4;
     
 }
 
 .home .home-btn .for-you {
     width: 50%;
-    border: 1px solid black;
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+.home .home-btn .for-you span {
+    font-weight: 600;
+    border-bottom: 3px solid rgb(29, 155, 240);
+    padding-bottom: 5px;
+}
+
 .home .home-btn .following {
     width: 50%;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.home .home-btn .following span {
+    font-weight: 600;
+    padding-bottom: 8px;
 }
 
 .tweet {
     height: 120px;
     display: flex;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #eff3f4;
 }
 
 .tweet .tweet-img {
@@ -191,5 +211,215 @@ body {
     justify-content: center;
 }
 
+.show-post {
+    border-bottom: 1px solid #eff3f4;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.show-post-text {
+    color: rgb(29, 155, 240);
+}
 
+.post1 {
+    border-bottom: 1px solid #eff3f4;
+    padding: 12px 16px 12px 16px;
+    display: flex;
+}
+
+.post1 .profile-picture img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 12px;
+} 
+
+.name-handle-time {
+    display: flex;
+}
+
+.name-handle-time .tweeter-name {
+    font-weight: 600;
+}
+
+.name-handle-time span {
+    margin-left: 4px;
+}
+
+.tweet-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-trends {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.search-bar {
+    display: flex;
+    width: 348px;
+    background-color: #ebeeee;
+    padding: 10px 10px 10px 20px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.search-bar svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    background: none;
+    border: none;
+}
+
+.subscribe {
+    background-color: #ebeeee;
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 20px;
+}
+
+.subscribe-heading {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 9px;
+    
+}
+
+.subscribe-text {
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 7px;
+}
+
+.subscribe-button {
+    color: white;
+    border: none;
+    background-color: black;
+    width: 106px;
+    height: 36px;
+    border-radius: 50px;
+    padding: 0 16px;
+    margin-bottom: 5px;
+}
+
+.trends {
+    background-color: #ebeeee;
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 20px;
+}
+
+.trends-heading {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 13px;
+}
+
+.trend {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0;
+}
+
+.trendline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trendline span {
+    font-size: 13px;
+}
+
+.trendline svg {
+    height: 20px;
+    width: 20px;
+}
+
+.trend-text {
+    font-weight: 650;
+    font-size: 15px;
+}
+
+.trend-number {
+    font-size: 13px;
+}
+
+.who-to-follow {
+    background-color: #ebeeee;
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 20px;
+}
+
+.who-to-follow-heading {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 13px;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.account-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.account .name-handle2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    align-items:flex-start;
+    align-content: center;
+}
+
+.name-handle2 .wtf-name span {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.name-handle2 .wtf-handle span {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.account .follow-button {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    height: 32px;
+    width: 78px;
+}
